@@ -1,2 +1,5 @@
 <% post = Post.find(1) %>
-<p><%= post.post_content %></p>
+<p><%= post.pcontent %></p>
+<p>posted by <%= post.user.name %></p>
+
+<%= link_to post.user.name %>
