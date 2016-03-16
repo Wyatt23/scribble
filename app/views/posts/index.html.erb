@@ -1,1 +1,24 @@
-<!-- Here we will view all posts  -->
+<!DOCTYPE html>
+
+<h1>Posts So Far</h1>
+
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Scribble</th>
+      <th>Scribbled by</th>
+    </tr>
+  <% Post.all.each do |post| %>
+   <tr>
+     <td><%= post.title %></td>
+     <td><%= post.content %></td>
+     <td><%= post.username %></td>
+   </tr>
+   <% end %>
+
+
+
+
+
+
+  </table>
