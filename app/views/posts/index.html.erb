@@ -1,24 +1,26 @@
-<!DOCTYPE html>
-
-<h1>Posts So Far</h1>
-
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Scribble</th>
-      <th>Scribbled by</th>
-    </tr>
+<h1 class="all_tweet_heading">Black lines matter</h1>
+<!-- <table>
+  <tr>
+    <th>I said:</th>
+    <th>who said?</th>
+  </tr>
   <% Post.all.each do |post| %>
-   <tr>
-     <td><%= post.title %></td>
-     <td><%= post.content %></td>
-     <td><%= post.username %></td>
-   </tr>
-   <% end %>
+    <tr>
+      <td><%= post.title %></td>
+      <th><%= post.content.notsure%></th>
+    </tr>
 
 
+</table> -->
 
 
-
-
-  </table>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <a href="/posts/<%= post.id%>">
+            <%= post.title %>
+            <%= post.content %>
+          </a>
+        </li>
+        <% end %>
+    </ul>
