@@ -4,6 +4,6 @@
 <p class="pauthor"><%= post.author%></p>
 <div class="go_postal">
   <p class="pcontent"><%= post.post_content[0,700]%>...(click below for full post)</p>
-  <p><%= link_to"see more",post_path(post),:class => "a"%></p>
+  <p><%= link_to "see more",post_path(post),:class => "a"%></p>
 </div>
 <% end %>
